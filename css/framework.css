@@ -5,13 +5,22 @@
 }
 
 .container-fluid{
-    width: 100%;
+    width: 100%;    
 }
+
+.container {    
+    width: 100%;
+    margin: 0 auto;
+} 
 
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
+[class*="col-"] {
+    flex: 0 0 auto;
+} 
 
 /* 12 System */
 .col-xs {
@@ -68,5 +77,8 @@
     flex-basis: calc((100% / 12) * 12);
     max-width: calc((100% / 12) * 12);
 }
+
+
+
 
 
